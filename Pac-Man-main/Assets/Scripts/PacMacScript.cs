@@ -95,4 +95,15 @@ public class PacMacScript : MonoBehaviour
             
         }
     }
+    IEnumerator DoCheck()
+{
+    for(GhostEating)
+    {
+        if (ProximityCheck())
+        {
+            // Perform some action here
+        }
+        yield return new WaitForSeconds(.1f);
+    }
+}
 }
